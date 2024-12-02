@@ -9,7 +9,7 @@ class Email {
 
       final String subject = Uri.encodeComponent("Lista de Produtos");
       final String body = Uri.encodeComponent(
-          "Olá,\n\nAqui está a lista de produtos:\n${produtos.map((p) => '- ${p.nome}: \$${p.preco}').join('\n')}");
+          "Olá,\n\nAqui está a lista de Desejos da Art's do Tear:\n${produtos.map((p) => '- ${p.nome}: \$${p.preco}').join('\n')}");
       final Uri emailUri =
           Uri.parse("mailto:$email?subject=$subject&body=$body");
 
